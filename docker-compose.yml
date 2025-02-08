@@ -1,0 +1,10 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: APITasks
+    restart: always
+    ports:
+      - '3306:3306'
+    environment:
+      - MYSQL_ROOT_PASSWORD=2478be40dd94892b1e2573d234d4529d
+      - MYSQL_DATABASE=APITasks
